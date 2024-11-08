@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@600&family=Bebas+Neue&family=Inter:wght@200;500&family=Montserrat&family=Open+Sans:wght@300&family=Outfit:wght@200;500&family=Poppins&family=Raleway:wght@100&family=Roboto&family=Rubik:wght@300&family=Sarala&family=Sawarabi+Gothic&family=Syne&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header: 'Open Sans', sans-serif;
+  --para: 'Roboto', sans-serif;
+}
+
+.header-text,
+.sub-header-text {
+  font-family: var(--header);
+  font-weight: 700;
+}
+
+.para-text {
+  font-family: var(--para);
+  font-size: 16px;
+}
+
+.header-text {
+  font-size: 32px;
+}
+
+.sub-header-text {
+  font-size: 24px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.nav-link {
+  font-size: 24px;
+  opacity: 0.8;
+  font-family: var(--header);
+  text-decoration: none;
+  color: black;
+  padding: 0.25rem 1rem;
+  width: 100%;
+}
+
+#navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #01010e;
+  
+}
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.head-sec {
+  padding: 1rem 1rem;
+
+}
+
+.nav-sec, .head-sec {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  background-color: #f7f7f7;
+  padding: 1rem 1.5rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin-left: 33px;
+  gap: 0.5rem;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+@media (min-width: 1024px){
+  #navbar{
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    min-width: 250px;
+  }
+}
