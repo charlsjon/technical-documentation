@@ -1,2 +1,2 @@
-# technical-documentationw
+# technical-documentation
 ## activity in freecodecamp
